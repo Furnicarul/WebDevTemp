@@ -1,0 +1,36 @@
+Create a config folder with fire.js:
+	* put your web config there
+	
+	->const fire = firebase.initialeApp(firebaseConfig);
+	->export default fire;
+
+App.js:
+	import fire from ./config/fire
+	* class app component:
+		this.state = {
+			user: {}	
+		}
+		authLister(){
+			fire.auth().onAuthStateChanged((user) => {
+				if(user) { this.setState({user})}
+				else { this.setState({user: null })}
+			})
+		}
+	componentDidMount() {
+		this.authListener()
+	}
+
+render() {
+	<div>
+		{ this.state.user ? (<Home/>) : (<Login/>)}
+	</div>
+}
+
+Login:
+	return(
+		<div>
+			<form>
+				<input type="email", id="email", placeholder="email"
+			</form>
+		</div>
+	)

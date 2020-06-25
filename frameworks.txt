@@ -1,0 +1,6 @@
+*Main:
+-----> React.js ( GraphQl, Redux )
+-----> Angular.js
+-----> HTML, CSS, JS, SCSS, SASS, BootStrap
+*Second:
+-----> Electron.js

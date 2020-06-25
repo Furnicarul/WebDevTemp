@@ -1,0 +1,11 @@
+[ + ] Vars [ + ]
+let example1: boolean = true;
+ 
+let example2: number = 35;
+ 
+let example3: string = 'Hello World';
+
+let example4: any = ce vrem;
+
+let example5: boolean | number = 35;
+####################################

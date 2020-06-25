@@ -1,0 +1,16 @@
+Firebase React Authentication:
+	-> Firebase:
+		* Put a name for the project
+		* Auth tab:
+			[ + ] Sign In Method
+			[ + ] Email / Password ( enable )
+		* Project Settings:
+			[ + ] Your apps: select WEB ( you will see your APP config.)
+
+	-> Install: npm firebase & react-router-dom
+	-> Add you app config in your app route ( .env file)
+	-> Create a base.js file:
+		* const app = firebase.initialzeApp({
+			apiKey: process.env.REACT_APP_FIREBASE_KEY, ( exemple )
+		})
+
